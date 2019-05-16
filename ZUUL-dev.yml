@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev
+  application:
+    name: ZUUL
+server:
+  port: 7002
