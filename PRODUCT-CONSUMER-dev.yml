@@ -12,12 +12,5 @@ spring:
         enable: true
         service-id: config
       profile: dev
-
-
-#随机访问
-PRODUCT-PROVIDER:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-
 server:
   port: 80
