@@ -7,12 +7,10 @@ spring:
       profile: dev
   application:
     name: ZUUL
-      
 server:
   port: 9000
-  
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: "*"
