@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: PRODUCT-CONSUMER
+  rabbitmq:
+    host: 192.168.1.223
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      discovery:
+        enable: true
+        service-id: config
+      profile: dev
+
+
+#随机访问
+PRODUCT-PROVIDER:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+server:
+  port: 80
