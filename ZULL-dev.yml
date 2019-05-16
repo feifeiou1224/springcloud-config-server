@@ -6,6 +6,6 @@ spring:
         service-id: config
       profile: dev
   application:
-    name: ZUUL
+    name: ZULL
 server:
   port: 7002
