@@ -7,7 +7,6 @@ spring:
       profile: dev
   application:
     name: ZUUL
-
       
 server:
   port: 9000
